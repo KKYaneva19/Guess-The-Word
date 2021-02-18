@@ -175,57 +175,57 @@ void changeQuestions1()
 	{
 	case 0:
 		//Shows the question and expects you to write the correct answer
-		cout << "Question 1: ........" << endl;
+		cout << "Question 1: Which is the natural science that studies life and living organisms?" << endl;
 		cout << "Type word: ";
 		break;
 
 	case 1:
-		cout << "Question 2: ........" << endl;
+		cout << "Question 2: Which is the science subject involved with elements and compounds composed of atoms, molecules and ions?" << endl;
 		cout << "Type word: ";
 		break;
 
 	case 2:
-		cout << "Question 3: ........" << endl;
+		cout << "Question 3: Which is the creative subject, where we express imaginative or technical skill while drawing?" << endl;
 		cout << "Type word: ";
 		break;
 
 	case 3:
-		cout << "Question 4: ........" << endl;
+		cout << "Question 4: Which is the subject, where we do research and learn about music?" << endl;
 		cout << "Type word: ";
 		break;
 
 	case 4:
-		cout << "Question 5: ........" << endl;
+		cout << "Question 5: Which is the scientific discipline which deals with matter and its relation to energy?" << endl;
 		cout << "Type word: ";
 		break;
 
 	case 5:
-		cout << "Question 6: ........" << endl;
+		cout << "Question 6: The school subject, where we are taught sport and physical activity, is?" << endl;
 		cout << "Type word: ";
 		break;
 
 	case 6:
-		cout << "Question 7: ........" << endl;
+		cout << "Question 7: The subject, where we study of numbers, shapes and patterns is?" << endl;
 		cout << "Type word: ";
 		break;
 
 	case 7:
-		cout << "Question 8: ........" << endl;
+		cout << "Question 8: The subject, where we are taught how to solve problems using programming languages is?" << endl;
 		cout << "Type word: ";
 		break;
 
 	case 8:
-		cout << "Question 9: ........" << endl;
+		cout << "Question 9: The subject, where we study about different authors and their work? " << endl;
 		cout << "Type word: ";
 		break;
 
 	case 9:
-		cout << "Question 10: ........" << endl;
+		cout << "Question 10: The subjects, where we study about the past is?" << endl;
 		cout << "Type word: ";
 		break;
 
 	case 10:
-		cout << "Question 11: ........" << endl;
+		cout << "Question 11: The subject, where we study about the Earth and the other planets is?" << endl;
 		cout << "Type word: ";
 		break;
 	}
@@ -508,47 +508,47 @@ void changeQuestions2()
 	{
 	case 0:
 		//Shows the question and expects you to write the correct answer
-		cout << "Question 1: ........" << endl;
+		cout << "Question 1: The capital and the largest city of England is?" << endl;
 		cout << "Type word: ";
 		break;
 
 	case 1:
-		cout << "Question 2: ........" << endl;
+		cout << "Question 2: The capital city of Japan is?" << endl;
 		cout << "Type word: ";
 		break;
 
 	case 2:
-		cout << "Question 3: ........" << endl;
+		cout << "Question 3: The capital and the most popular city of France is?"  << endl;
 		cout << "Type word: ";
 		break;
 
 	case 3:
-		cout << "Question 4: ........" << endl;
+		cout << "Question 4: The capital of Italy is?"  << endl;
 		cout << "Type word: ";
 		break;
 
 	case 4:
-		cout << "Question 5: ........" << endl;
+		cout << "Question 5: The capital city of the USA is? (named after their first president)" << endl;
 		cout << "Type word: ";
 		break;
 
 	case 5:
-		cout << "Question 6: ........" << endl;
+		cout << "Question 6: The capital and largest city of Germany is?"  << endl;
 		cout << "Type word: ";
 		break;
 
 	case 6:
-		cout << "Question 7: ........" << endl;
+		cout << "Question 7: The capital and largest city of Argentina is?"  << endl;
 		cout << "Type word: ";
 		break;
 
 	case 7:
-		cout << "Question 8: ........" << endl;
+		cout << "Question 8: The capital and most populous city of Thailand is?"  << endl;
 		cout << "Type word: ";
 		break;
 
 	case 8:
-		cout << "Question 9: ........" << endl;
+		cout << "Question 9: The capital of South Africa is?"  << endl;
 		cout << "Type word: ";
 		break;
 	}
