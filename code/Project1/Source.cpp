@@ -707,42 +707,19 @@ int main() {
 	changeWords1(); //main function
 
 	cout << endl << endl << "                 Congratulations!!! You Won" << endl << endl;
-	//Shows full crossword
-	drawFirstRow(wantedWord1);
-	drawSecondRow(wantedWord2);
-	drawThirdRow(wantedWord3);
-	drawForthRow(wantedWord4);
-	drawFifthRow(wantedWord5);
-	drawSixthRow(wantedWord6);
-	drawSeventhRow(wantedWord7);
-	drawEightRow(wantedWord8);
-	drawNinthRow(wantedWord9);
-	drawTenthRow(wantedWord10);
-	drawEleventhRow(wantedWord11);
-
-
+	system("CLS");
 
 
 	cout << endl << "                    Do you want to start a new game: ";
 	getline(cin, newGame);
 
-
 	if (newGame == "Yes")
 	{
+
 		changeWords2(); //main function
 
-		cout << endl << "Congratulations!!! You Won";
-		//Shows full crossword
-		drawFirstRow_2(wantedWord1_2);
-		drawSecondRow_2(wantedWord2_2);
-		drawThirdRow_2(wantedWord3_2);
-		drawForthRow_2(wantedWord4_2);
-		drawFifthRow_2(wantedWord5_2);
-		drawSixthRow_2(wantedWord6_2);
-		drawSeventhRow_2(wantedWord7_2);
-		drawEightRow_2(wantedWord8_2);
-		drawNinthRow_2(wantedWord9_2);
-		return 0;
+		cout << endl << "                 Congratulations!!! You Won";
+
 	}
 
 	if (newGame == "No")
