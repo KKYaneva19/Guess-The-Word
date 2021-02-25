@@ -4,32 +4,32 @@ using namespace std;
 
 int number;
 string word;
-string answer1 = "Biology";
-string answer2 = "Chemistry";
-string answer3 = "Art";
-string answer4 = "Music";
-string answer5 = "Physics";
-string answer6 = "Pe";
-string answer7 = "Maths";
-string answer8 = "Programming";
-string answer9 = "Literature";
-string answer10 = "History";
-string answer11 = "Geography";
+string wantedWord1 = "Biology";
+string wantedWord2 = "Chemistry";
+string wantedWord3 = "Art";
+string wantedWord4 = "Music";
+string wantedWord5 = "Physics";
+string wantedWord6 = "Pe";
+string wantedWord7 = "Maths";
+string wantedWord8 = "Programming";
+string wantedWord9 = "Literature";
+string wantedWord10 = "History";
+string wantedWord11 = "Geography";
 
-string answer1_2 = "London";
-string answer2_2 = "Tokyo";
-string answer3_2 = "Paris";
-string answer4_2 = "Rome";
-string answer5_2 = "Washington";
-string answer6_2 = "Berlin";
-string answer7_2 = "Buenos Aires";
-string answer8_2 = "Bangkok";
-string answer9_2 = "Cape Town";
+string wantedWord1_2 = "London";
+string wantedWord2_2 = "Tokyo";
+string wantedWord3_2 = "Paris";
+string wantedWord4_2 = "Rome";
+string wantedWord5_2 = "Washington";
+string wantedWord6_2 = "Berlin";
+string wantedWord7_2 = "Buenos Aires";
+string wantedWord8_2 = "Bangkok";
+string wantedWord9_2 = "Cape Town";
 
 int counter = 0;
 int correctWordsNumber = 0;
 
-//Draw row for the first word
+
 void drawFirstRow(string word1)
 {
 
@@ -39,7 +39,7 @@ void drawFirstRow(string word1)
 	cout << "                       -----------------------------";
 }
 
-//Draw row for the second word
+
 void drawSecondRow(string word2)
 {
 
@@ -49,7 +49,7 @@ void drawSecondRow(string word2)
 	cout << "                       -------------------------------------";
 }
 
-//Draw row for the third word
+
 void drawThirdRow(string word3)
 {
 
@@ -59,7 +59,7 @@ void drawThirdRow(string word3)
 	cout << "                       -------------";
 }
 
-//Draw row for the forth word
+
 void drawForthRow(string word4)
 {
 
@@ -69,7 +69,7 @@ void drawForthRow(string word4)
 	cout << "                       ---------------------";
 }
 
-//Draw row for the fifth word
+
 void drawFifthRow(string word5)
 {
 
@@ -79,7 +79,7 @@ void drawFifthRow(string word5)
 	cout << "                       -----------------------------";
 }
 
-//Draw row for the sixth word
+
 void drawSixthRow(string word6)
 {
 
@@ -89,7 +89,7 @@ void drawSixthRow(string word6)
 	cout << "                       ---------";
 }
 
-//Draw row for the seventh word
+
 void drawSeventhRow(string word7)
 {
 
@@ -99,7 +99,7 @@ void drawSeventhRow(string word7)
 	cout << "                      ---------------------";
 }
 
-//Draw row for the eight word
+
 void drawEightRow(string word8)
 {
 
@@ -109,7 +109,7 @@ void drawEightRow(string word8)
 	cout << "                      -------------------------------------------------";
 }
 
-//Draw row for the ninth word
+
 void drawNinthRow(string word9)
 {
 
@@ -119,7 +119,7 @@ void drawNinthRow(string word9)
 	cout << "                      -----------------------------------------";
 }
 
-//Draw row for the tenth word
+
 void drawTenthRow(string word10)
 {
 
@@ -129,7 +129,7 @@ void drawTenthRow(string word10)
 	cout << "                      -----------------------------";
 }
 
-//Draw row for the eleventh word
+
 void drawEleventhRow(string word11)
 {
 
@@ -158,19 +158,25 @@ void checkWords(string word, string wantedWord)
 		{
 			if (j + 1 == 1)
 			{
-				cout << j + 1 << "st letter is incorrect!";
+				cout << "The " << j + 1 << "st letter is incorrect!" << endl;
 				cin >> word[j];
 
 			}
 			if (j + 1 == 2)
 			{
-				cout << j + 1 << "nd letter is incorrect!";
+				cout << "The " << j + 1 << "nd letter is incorrect!" << endl;
 				cin >> word[j];
 
 			}
-			if (j + 1 > 2)
+			if (j + 1 == 3)
 			{
-				cout << j + 1 << "th letter is incorrect!" << endl;
+				cout << "The " << j + 1 << "rd letter is incorrect!" << endl;
+				cin >> word[j];
+
+			}
+			if (j + 1 > 3)
+			{
+				cout << "The " << j + 1 << "th letter is incorrect!" << endl;
 				cin >> word[j];
 			}
 			counter++;
@@ -239,6 +245,7 @@ void changeQuestions1()
 
 void changeWords1() //goes from one word to another
 {
+	cout << "                                          Level 1: School Subjects" << endl << endl;
 	changeQuestions1();
 	if (correctWordsNumber == 0) //checks how many correct words you have found
 	{
@@ -422,7 +429,7 @@ void drawFirstRow_2(string word1)
 	cout << "                      -------------------------";
 }
 
-//Draw row for the second word
+
 void drawSecondRow_2(string word2)
 {
 
@@ -432,7 +439,6 @@ void drawSecondRow_2(string word2)
 	cout << "                      ---------------------" << endl;
 }
 
-//Draw row for the third word
 void drawThirdRow_2(string word3)
 {
 
@@ -442,7 +448,7 @@ void drawThirdRow_2(string word3)
 	cout << "                      ---------------------";
 }
 
-//Draw row for the forth word
+
 void drawForthRow_2(string word4)
 {
 
@@ -452,7 +458,7 @@ void drawForthRow_2(string word4)
 	cout << "                      -----------------";
 }
 
-//Draw row for the fifth word
+
 void drawFifthRow_2(string word5)
 {
 
@@ -462,7 +468,7 @@ void drawFifthRow_2(string word5)
 	cout << "                      -----------------------------------------";
 }
 
-//Draw row for the sixth word
+
 void drawSixthRow_2(string word6)
 {
 
@@ -472,7 +478,7 @@ void drawSixthRow_2(string word6)
 	cout << "                      -------------------------";
 }
 
-//Draw row for the seventh word
+
 void drawSeventhRow_2(string word7)
 {
 
@@ -482,7 +488,7 @@ void drawSeventhRow_2(string word7)
 	cout << "                      -----------------------------------------------------";
 }
 
-//Draw row for the eight word
+
 void drawEightRow_2(string word8)
 {
 
@@ -492,7 +498,7 @@ void drawEightRow_2(string word8)
 	cout << "                      -----------------------------";
 }
 
-//Draw row for the ninth word
+
 void drawNinthRow_2(string word9)
 {
 
@@ -510,6 +516,7 @@ void changeQuestions2()
 	case 0:
 		//Shows the question and expects you to write the correct answer
 		system("CLS");
+		cout << "                                          Level 2: Capital Citys" << endl << endl;
 		cout << "Question 1: The capital and the largest city of England is?" << endl;
 		cout << "Type word: ";
 		break;
@@ -710,14 +717,13 @@ void game()
 	changeWords1(); //main function
 	system("CLS");
 
-	cout << endl << endl << "                    Congratulations!!! You Won" << endl << endl;
-	cout << endl << "                    Do you want to start a new game: ";
+	cout << endl << endl << "                                          Congratulations!!! You Won" << endl << endl;
+	cout << endl << "                                          Do you want to start a new game: ";
 
 	getline(cin, newGame);
 
-	if (newGame == "Yes")
+	if (newGame == "Yes" || newGame == "yes")
 	{
-
 		changeWords2(); //main function
 
 		cout << endl << "                 Congratulations!!! You Won ";
@@ -725,11 +731,11 @@ void game()
 
 	}
 
-	if (newGame == "No")
+	if (newGame == "No" || newGame == "no")
 	{
 		system("PAUSE");
 	}
-	else if (newGame != "No" || newGame != "Yes") {
+	else if (newGame != "No" && newGame != "Yes" && newGame == "no" && newGame == "yes") {
 		cout << " Incorrect input!";
 	}
 	system("PAUSE");
@@ -737,23 +743,39 @@ void game()
 
 void menu() {
 	int choice;
-	cout << "                                      ********** Guess The Word **********\n" << endl;
-	cout << "                                                 1. Start Game\n" << endl;
-	cout << "                                                  2. Rules\n" << endl;
-	cout << "                                                   3. Quit\n" << endl;
-	cout << "                                           Please select your choice!";
+	cout << "                                    *   *   *   * Guess The Word *   *   *   *  * " << endl << endl;
+	cout << "                                    *           1. Start Game                   *" << endl << endl;
+	cout << "                                    *           2. Rules                        *" << endl << endl;
+	cout << "                                    *           3. Quit                         *" << endl << endl;
+	cout << "                                    *   *   *   *   *   *   *   *   *   *   *   *" << endl << endl;
+	cout << "                                             Please select your choice! ";
+
 	cin >> choice;
 	if (choice == 1) {
 		game();
 	}
 	else if (choice == 2) {
 		system("CLS");
-		cout << "1.There can't be more than one aswear.\n2.U must fill all the given space.\n3.U must use only English.\n4.There can't be any numbers or symbols.\n5.Each first letter must be in capital.\n";
+		cout << "                               *   *   *   *   *   *   *   *   *   *   *   *   * *" << endl << endl;
+		cout << "                               *                    RULES                        *" << endl << endl;
+		cout << "                               *     1.There can't be more than one answear.     *" << endl << endl;
+		cout << "                               *     2.You must fill all the given space.        *" << endl << endl;
+		cout << "                               *     3.You must use only English.                *" << endl << endl;
+		cout << "                               *     4.There can't be any numbers or symbols.    *" << endl << endl;
+		cout << "                               *     5.Each first letter must be in capital.     *" << endl << endl;
+		cout << "                               *                                                 *" << endl << endl;
+		cout << "                               *   *   *   *   *   *   *   *   *   *   *   *   * *" << endl;
+
 		system("PAUSE");
 		system("CLS");
 		menu();
 	}
 	else if (choice == 3) {
+		system("PAUSE");
+	}
+	else if (choice != 3)
+	{
+		cout << "                                                  Incorrect Input!" << endl;
 		system("PAUSE");
 	}
 }
