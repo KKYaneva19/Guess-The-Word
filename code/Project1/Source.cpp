@@ -4,33 +4,33 @@ using namespace std;
 
 int number;
 string word;
-string wantedWord1 = "Biology";
-string wantedWord2 = "Chemistry";
-string wantedWord3 = "Art";
-string wantedWord4 = "Music";
-string wantedWord5 = "Physics";
-string wantedWord6 = "Pe";
-string wantedWord7 = "Maths";
-string wantedWord8 = "Programming";
-string wantedWord9 = "Literature";
-string wantedWord10 = "History";
-string wantedWord11 = "Geography";
+string answer1_1 = "Biology";
+string answer2_1 = "Chemistry";
+string answer3_1 = "Art";
+string answer4_1 = "Music";
+string answer5_1 = "Physics";
+string answer6_1 = "Pe";
+string answer7_1 = "Maths";
+string answer8_1 = "Programming";
+string asnwer9_1 = "Literature";
+string answer10_1 = "History";
+string answer11 = "Geography";
 
-string wantedWord1_2 = "London";
-string wantedWord2_2 = "Tokyo";
-string wantedWord3_2 = "Paris";
-string wantedWord4_2 = "Rome";
-string wantedWord5_2 = "Washington";
-string wantedWord6_2 = "Berlin";
-string wantedWord7_2 = "Buenos Aires";
-string wantedWord8_2 = "Bangkok";
-string wantedWord9_2 = "Cape Town";
+string answer1_2 = "London";
+string answer2_2 = "Tokyo";
+string answer3_2 = "Paris";
+string answer4_2 = "Rome";
+string answer5_2 = "Washington";
+string answer6_2 = "Berlin";
+string answer7_2 = "Buenos Aires";
+string answer8_2 = "Bangkok";
+string answer9_2 = "Cape Town";
 
 int counter = 0;
 int correctWordsNumber = 0;
 
 
-void drawFirstRow(string word1)
+void drawFirstRow_1(string word1)
 {
 
 	cout << endl;
@@ -40,7 +40,7 @@ void drawFirstRow(string word1)
 }
 
 
-void drawSecondRow(string word2)
+void drawSecondRow_1(string word2)
 {
 
 	cout << endl;
@@ -50,7 +50,7 @@ void drawSecondRow(string word2)
 }
 
 
-void drawThirdRow(string word3)
+void drawThirdRow_1(string word3)
 {
 
 	cout << endl;
@@ -60,7 +60,7 @@ void drawThirdRow(string word3)
 }
 
 
-void drawForthRow(string word4)
+void drawForthRow_1(string word4)
 {
 
 	cout << endl;
@@ -70,7 +70,7 @@ void drawForthRow(string word4)
 }
 
 
-void drawFifthRow(string word5)
+void drawFifthRow_1(string word5)
 {
 
 	cout << endl;
@@ -80,7 +80,7 @@ void drawFifthRow(string word5)
 }
 
 
-void drawSixthRow(string word6)
+void drawSixthRow_1(string word6)
 {
 
 	cout << endl;
@@ -90,7 +90,7 @@ void drawSixthRow(string word6)
 }
 
 
-void drawSeventhRow(string word7)
+void drawSeventhRow_1(string word7)
 {
 
 	cout << endl;
@@ -100,7 +100,7 @@ void drawSeventhRow(string word7)
 }
 
 
-void drawEightRow(string word8)
+void drawEightRow_1(string word8)
 {
 
 	cout << endl;
@@ -110,7 +110,7 @@ void drawEightRow(string word8)
 }
 
 
-void drawNinthRow(string word9)
+void drawNinthRow_1(string word9)
 {
 
 	cout << endl;
@@ -120,7 +120,7 @@ void drawNinthRow(string word9)
 }
 
 
-void drawTenthRow(string word10)
+void drawTenthRow_1(string word10)
 {
 
 	cout << endl;
@@ -130,7 +130,7 @@ void drawTenthRow(string word10)
 }
 
 
-void drawEleventhRow(string word11)
+void drawEleventhRow_1(string word11)
 {
 
 	cout << endl;
@@ -140,21 +140,21 @@ void drawEleventhRow(string word11)
 }
 
 //Function to check if what you typed is the correct word (for the rest of the words)
-void checkWords(string word, string wantedWord)
+void check(string word, string answer)
 {
 	getline(cin, word);
-	for (size_t j = 0; j < wantedWord.size(); j++)
+	for (size_t j = 0; j < answer.size(); j++)
 	{
 		if (word == "")
 		{
 			getline(cin, word);
 
 		}
-		if (word[j] == wantedWord[j]) //counts how many letters you've typed are correct
+		if (word[j] == answer[j]) //counts how many letters you've typed are correct
 		{
 			counter++;
 		}
-		while (word[j] != wantedWord[j]) //checks if the letter you've typed is wrong
+		while (word[j] != answer[j]) //checks if the letter you've typed is wrong
 		{
 			if (j + 1 == 1)
 			{
@@ -249,11 +249,11 @@ void changeWords1() //goes from one word to another
 	changeQuestions1();
 	if (correctWordsNumber == 0) //checks how many correct words you have found
 	{
-		checkWords(word, wantedWord1);
+		check(word, answer1_1);
 		correctWordsNumber = 1; //shows how many words you've found
-		if (counter >= wantedWord1.size()) //checks if you've typed the whole word correctly
+		if (counter >= answer1_1.size()) //checks if you've typed the whole word correctly
 		{
-			drawFirstRow(wantedWord1); //shows the correct row
+			drawFirstRow_1(answer1_1); //shows the correct row
 			word = word.empty();
 			counter = 0;
 		}
@@ -261,30 +261,14 @@ void changeWords1() //goes from one word to another
 	cout << endl;
 
 	changeQuestions1();
-	if (correctWordsNumber == 1) //checks how many correct words you have found
+	if (correctWordsNumber == 1)
 	{
-		checkWords(word, wantedWord2);
-		correctWordsNumber = 2; //shows how many words you've found
+		check(word, answer2_1);
+		correctWordsNumber = 2;
 
-		if (counter >= wantedWord2.size()) //checks if you've typed the whole word correctly
+		if (counter >= answer2_1.size())
 		{
-			drawSecondRow(wantedWord2); //shows the correct row
-			word = word.empty();
-			counter = 0;
-		}
-	}
-	cout << endl;
-
-
-	changeQuestions1();
-	if (correctWordsNumber == 2) //checks how many correct words you have found
-	{
-		checkWords(word, wantedWord3);
-		correctWordsNumber = 3; //shows how many words you've found
-
-		if (counter >= wantedWord3.size()) //checks if you've typed the whole word correctly
-		{
-			drawThirdRow(wantedWord3); //shows the correct row
+			drawSecondRow_1(answer2_1);
 			word = word.empty();
 			counter = 0;
 		}
@@ -293,14 +277,14 @@ void changeWords1() //goes from one word to another
 
 
 	changeQuestions1();
-	if (correctWordsNumber == 3) //checks how many correct words you have found
+	if (correctWordsNumber == 2)
 	{
-		checkWords(word, wantedWord4);
-		correctWordsNumber = 4; //shows how many words you've found
+		check(word, answer3_1);
+		correctWordsNumber = 3;
 
-		if (counter >= wantedWord4.size()) //checks if you've typed the whole word correctly
+		if (counter >= answer3_1.size())
 		{
-			drawForthRow(wantedWord4); //shows the correct row
+			drawThirdRow_1(answer3_1);
 			word = word.empty();
 			counter = 0;
 		}
@@ -309,14 +293,14 @@ void changeWords1() //goes from one word to another
 
 
 	changeQuestions1();
-	if (correctWordsNumber == 4) //checks how many correct words you have found
+	if (correctWordsNumber == 3)
 	{
-		checkWords(word, wantedWord5);
-		correctWordsNumber = 5; //shows how many words you've found
+		check(word, answer4_1);
+		correctWordsNumber = 4;
 
-		if (counter >= wantedWord5.size()) //checks if you've typed the whole word correctly
+		if (counter >= answer4_1.size())
 		{
-			drawFifthRow(wantedWord5); //shows the correct row
+			drawForthRow_1(answer4_1);
 			word = word.empty();
 			counter = 0;
 		}
@@ -325,14 +309,14 @@ void changeWords1() //goes from one word to another
 
 
 	changeQuestions1();
-	if (correctWordsNumber == 5) //checks how many correct words you have found
+	if (correctWordsNumber == 4)
 	{
-		checkWords(word, wantedWord6);
-		correctWordsNumber = 6; //shows how many words you've found
+		check(word, answer5_1);
+		correctWordsNumber = 5;
 
-		if (counter >= wantedWord6.size()) //checks if you've typed the whole word correctly
+		if (counter >= answer5_1.size())
 		{
-			drawSixthRow(wantedWord6); //shows the correct row
+			drawFifthRow_1(answer5_1);
 			word = word.empty();
 			counter = 0;
 		}
@@ -341,14 +325,14 @@ void changeWords1() //goes from one word to another
 
 
 	changeQuestions1();
-	if (correctWordsNumber == 6) //checks how many correct words you have found
+	if (correctWordsNumber == 5)
 	{
-		checkWords(word, wantedWord7);
-		correctWordsNumber = 7; //shows how many words you've found
+		check(word, answer6_1);
+		correctWordsNumber = 6;
 
-		if (counter >= wantedWord7.size()) //checks if you've typed the whole word correctly
+		if (counter >= answer6_1.size())
 		{
-			drawSeventhRow(wantedWord7); //shows the correct row
+			drawSixthRow_1(answer6_1);
 			word = word.empty();
 			counter = 0;
 		}
@@ -357,14 +341,14 @@ void changeWords1() //goes from one word to another
 
 
 	changeQuestions1();
-	if (correctWordsNumber == 7) //checks how many correct words you have found
+	if (correctWordsNumber == 6)
 	{
-		checkWords(word, wantedWord8);
-		correctWordsNumber = 8; //shows how many words you've found
+		check(word, answer7_1);
+		correctWordsNumber = 7;
 
-		if (counter >= wantedWord8.size()) //checks if you've typed the whole word correctly
+		if (counter >= answer7_1.size())
 		{
-			drawEightRow(wantedWord8); //shows the correct row
+			drawSeventhRow_1(answer7_1);
 			word = word.empty();
 			counter = 0;
 		}
@@ -373,14 +357,14 @@ void changeWords1() //goes from one word to another
 
 
 	changeQuestions1();
-	if (correctWordsNumber == 8) //checks how many correct words you have found
+	if (correctWordsNumber == 7)
 	{
-		checkWords(word, wantedWord9);
-		correctWordsNumber = 9; //shows how many words you've found
+		check(word, answer8_1);
+		correctWordsNumber = 8;
 
-		if (counter >= wantedWord9.size()) //checks if you've typed the whole word correctly
+		if (counter >= answer8_1.size())
 		{
-			drawNinthRow(wantedWord9); //shows the correct row
+			drawEightRow_1(answer8_1);
 			word = word.empty();
 			counter = 0;
 		}
@@ -389,14 +373,14 @@ void changeWords1() //goes from one word to another
 
 
 	changeQuestions1();
-	if (correctWordsNumber == 9) //checks how many correct words you have found
+	if (correctWordsNumber == 8)
 	{
-		checkWords(word, wantedWord10);
-		correctWordsNumber = 10; //shows how many words you've found
+		check(word, asnwer9_1);
+		correctWordsNumber = 9;
 
-		if (counter >= wantedWord10.size()) //checks if you've typed the whole word correctly
+		if (counter >= asnwer9_1.size())
 		{
-			drawTenthRow(wantedWord10); //shows the correct row
+			drawNinthRow_1(asnwer9_1);
 			word = word.empty();
 			counter = 0;
 		}
@@ -405,14 +389,30 @@ void changeWords1() //goes from one word to another
 
 
 	changeQuestions1();
-	if (correctWordsNumber == 10) //checks how many correct words you have found
+	if (correctWordsNumber == 9)
 	{
-		checkWords(word, wantedWord11);
-		correctWordsNumber = 0; //restarts counter
+		check(word, answer10_1);
+		correctWordsNumber = 10;
 
-		if (counter >= wantedWord11.size()) //checks if you've typed the whole word correctly
+		if (counter >= answer10_1.size())
 		{
-			drawEleventhRow(wantedWord11); //shows the correct row
+			drawTenthRow_1(answer10_1);
+			word = word.empty();
+			counter = 0;
+		}
+	}
+	cout << endl;
+
+
+	changeQuestions1();
+	if (correctWordsNumber == 10)
+	{
+		check(word, answer11);
+		correctWordsNumber = 0;
+
+		if (counter >= answer11.size())
+		{
+			drawEleventhRow_1(answer11);
 			word = word.empty();
 			counter = 0;
 		}
@@ -420,6 +420,7 @@ void changeWords1() //goes from one word to another
 }
 
 ///game 2
+//Draw rows
 void drawFirstRow_2(string word1)
 {
 
@@ -568,12 +569,12 @@ void changeWords2() //goes from one word to another
 	changeQuestions2();
 	if (correctWordsNumber == 0) //checks how many correct words you have found
 	{
-		checkWords(word, wantedWord1_2);
+		check(word, answer1_2);
 		correctWordsNumber = 1; //shows how many words you've found
 
-		if (counter >= wantedWord1_2.size()) //checks if you've typed the whole word correctly
+		if (counter >= answer1_2.size()) //checks if you've typed the whole word correctly
 		{
-			drawFirstRow_2(wantedWord1_2); //shows the correct row
+			drawFirstRow_2(answer1_2); //shows the correct row
 			word = word.empty();
 			counter = 0;
 		}
@@ -582,14 +583,14 @@ void changeWords2() //goes from one word to another
 
 
 	changeQuestions2();
-	if (correctWordsNumber == 1) //checks how many correct words you have found
+	if (correctWordsNumber == 1)
 	{
-		checkWords(word, wantedWord2_2);
-		correctWordsNumber = 2; //shows how many words you've found
+		check(word, answer2_2);
+		correctWordsNumber = 2;
 
-		if (counter >= wantedWord2_2.size()) //checks if you've typed the whole word correctly
+		if (counter >= answer2_2.size())
 		{
-			drawSecondRow_2(wantedWord2_2); //shows the correct row
+			drawSecondRow_2(answer2_2);
 			word = word.empty();
 			counter = 0;
 		}
@@ -598,14 +599,14 @@ void changeWords2() //goes from one word to another
 
 
 	changeQuestions2();
-	if (correctWordsNumber == 2) //checks how many correct words you have found
+	if (correctWordsNumber == 2)
 	{
-		checkWords(word, wantedWord3_2);
-		correctWordsNumber = 3; //shows how many words you've found
+		check(word, answer3_2);
+		correctWordsNumber = 3;
 
-		if (counter >= wantedWord3_2.size()) //checks if you've typed the whole word correctly
+		if (counter >= answer3_2.size())
 		{
-			drawThirdRow_2(wantedWord3_2); //shows the correct row
+			drawThirdRow_2(answer3_2);
 			word = word.empty();
 			counter = 0;
 		}
@@ -614,14 +615,14 @@ void changeWords2() //goes from one word to another
 
 
 	changeQuestions2();
-	if (correctWordsNumber == 3) //checks how many correct words you have found
+	if (correctWordsNumber == 3)
 	{
-		checkWords(word, wantedWord4_2);
-		correctWordsNumber = 4; //shows how many words you've found
+		check(word, answer4_2);
+		correctWordsNumber = 4;
 
-		if (counter >= wantedWord4_2.size()) //checks if you've typed the whole word correctly
+		if (counter >= answer4_2.size())
 		{
-			drawForthRow_2(wantedWord4_2); //shows the correct row
+			drawForthRow_2(answer4_2);
 			word = word.empty();
 			counter = 0;
 		}
@@ -630,14 +631,14 @@ void changeWords2() //goes from one word to another
 
 
 	changeQuestions2();
-	if (correctWordsNumber == 4) //checks how many correct words you have found
+	if (correctWordsNumber == 4)
 	{
-		checkWords(word, wantedWord5_2);
-		correctWordsNumber = 5; //shows how many words you've found
+		check(word, answer5_2);
+		correctWordsNumber = 5;
 
-		if (counter >= wantedWord5_2.size()) //checks if you've typed the whole word correctly
+		if (counter >= answer5_2.size())
 		{
-			drawFifthRow_2(wantedWord5_2); //shows the correct row
+			drawFifthRow_2(answer5_2);
 			word = word.empty();
 			counter = 0;
 		}
@@ -646,14 +647,29 @@ void changeWords2() //goes from one word to another
 
 
 	changeQuestions2();
-	if (correctWordsNumber == 5) //checks how many correct words you have found
+	if (correctWordsNumber == 5)
 	{
-		checkWords(word, wantedWord6_2);
-		correctWordsNumber = 6; //shows how many words you've found
+		check(word, answer6_2);
+		correctWordsNumber = 6;
 
-		if (counter >= wantedWord6_2.size()) //checks if you've typed the whole word correctly
+		if (counter >= answer6_2.size())
 		{
-			drawSixthRow_2(wantedWord6_2); //shows the correct row
+			drawSixthRow_2(answer6_2);
+			counter = 0;
+		}
+	}
+	cout << endl;
+
+
+	changeQuestions2();
+	if (correctWordsNumber == 6)
+	{
+		check(word, answer7_2);
+		correctWordsNumber = 7;
+
+		if (counter >= answer7_2.size())
+		{
+			drawSeventhRow_2(answer7_2);
 			word = word.empty();
 			counter = 0;
 		}
@@ -662,14 +678,14 @@ void changeWords2() //goes from one word to another
 
 
 	changeQuestions2();
-	if (correctWordsNumber == 6) //checks how many correct words you have found
+	if (correctWordsNumber == 7)
 	{
-		checkWords(word, wantedWord7_2);
-		correctWordsNumber = 7; //shows how many words you've found
+		check(word, answer8_2);
+		correctWordsNumber = 8;
 
-		if (counter >= wantedWord7_2.size()) //checks if you've typed the whole word correctly
+		if (counter >= answer8_2.size())
 		{
-			drawSeventhRow_2(wantedWord7_2); //shows the correct row
+			drawEightRow_2(answer8_2);
 			word = word.empty();
 			counter = 0;
 		}
@@ -678,30 +694,14 @@ void changeWords2() //goes from one word to another
 
 
 	changeQuestions2();
-	if (correctWordsNumber == 7) //checks how many correct words you have found
+	if (correctWordsNumber == 8)
 	{
-		checkWords(word, wantedWord8_2);
-		correctWordsNumber = 8; //shows how many words you've found
+		check(word, answer9_2);
+		correctWordsNumber = 9;
 
-		if (counter >= wantedWord8_2.size()) //checks if you've typed the whole word correctly
+		if (counter >= answer9_2.size())
 		{
-			drawEightRow_2(wantedWord8_2); //shows the correct row
-			word = word.empty();
-			counter = 0;
-		}
-	}
-	cout << endl;
-
-
-	changeQuestions2();
-	if (correctWordsNumber == 8) //checks how many correct words you have found
-	{
-		checkWords(word, wantedWord9_2);
-		correctWordsNumber = 9; //shows how many words you've found
-
-		if (counter >= wantedWord9_2.size()) //checks if you've typed the whole word correctly
-		{
-			drawNinthRow_2(wantedWord9_2); //shows the correct row
+			drawNinthRow_2(answer9_2);
 			word = word.empty();
 			counter = 0;
 		}
