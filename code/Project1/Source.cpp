@@ -26,6 +26,14 @@ string answer7_2 = "Buenos Aires";
 string answer8_2 = "Bangkok";
 string answer9_2 = "Cape Town";
 
+string answer1_3 = "Spaghetti";
+string answer2_3 = "Banana";
+string answer3_3 = "Pizza";
+string answer4_3 = "Orange";
+string answer5_3 = "Bread";
+string answer6_3 = "Cake";
+string answer7_3 = "Lettuce";
+string answer8_3 = "Chocolate";
 
 
 int counter = 0;
@@ -39,7 +47,7 @@ void drawFirstRow_1(string word1)
 	cout << endl;
 	cout << "                       -----------------------------" << endl;
 	cout << "   1:                  | "; cout << word1[0]; cout << " | "; cout << word1[1]; cout << " | "; cout << word1[2]; cout << " | "; cout << word1[3]; cout << " | "; cout << word1[4]; cout << " | "; cout << word1[5]; cout << " | "; cout << word1[6]; cout << " | " << endl;
-	cout << "                       -----------------------------";
+	cout << "                       -----------------------------" << endl;
 }
 
 
@@ -49,7 +57,7 @@ void drawSecondRow_1(string word2)
 	cout << endl;
 	cout << "                       -------------------------------------" << endl;
 	cout << "  2:                   | "; cout << word2[0]; cout << " | "; cout << word2[1]; cout << " | "; cout << word2[2]; cout << " | "; cout << word2[3]; cout << " | "; cout << word2[4]; cout << " | "; cout << word2[5]; cout << " | "; cout << word2[6]; cout << " | ";  cout << word2[7]; cout << " | ";  cout << word2[8]; cout << " | " << endl;
-	cout << "                       -------------------------------------";
+	cout << "                       -------------------------------------" << endl;
 }
 
 
@@ -59,7 +67,7 @@ void drawThirdRow_1(string word3)
 	cout << endl;
 	cout << "                       -------------" << endl;
 	cout << "  3:                   | "; cout << word3[0]; cout << " | "; cout << word3[1]; cout << " | "; cout << word3[2]; cout << " | " << endl;
-	cout << "                       -------------";
+	cout << "                       -------------" << endl;
 }
 
 
@@ -69,7 +77,7 @@ void drawForthRow_1(string word4)
 	cout << endl;
 	cout << "                       ---------------------" << endl;
 	cout << "  4:                   | "; cout << word4[0]; cout << " | "; cout << word4[1]; cout << " | "; cout << word4[2]; cout << " | "; cout << word4[3]; cout << " | "; cout << word4[4]; cout << " | " << endl;
-	cout << "                       ---------------------";
+	cout << "                       ---------------------" << endl;
 }
 
 
@@ -79,7 +87,7 @@ void drawFifthRow_1(string word5)
 	cout << endl;
 	cout << "                       -----------------------------" << endl;
 	cout << "  5:                   | "; cout << word5[0]; cout << " | "; cout << word5[1]; cout << " | "; cout << word5[2]; cout << " | "; cout << word5[3]; cout << " | "; cout << word5[4]; cout << " | "; cout << word5[5]; cout << " | "; cout << word5[6]; cout << " | " << endl;
-	cout << "                       -----------------------------";
+	cout << "                       -----------------------------" << endl;
 }
 
 
@@ -89,7 +97,7 @@ void drawSixthRow_1(string word6)
 	cout << endl;
 	cout << "                       ---------" << endl;
 	cout << "  6:                   | "; cout << word6[0]; cout << " | "; cout << word6[1]; cout << " | " << endl;
-	cout << "                       ---------";
+	cout << "                       ---------" << endl;
 }
 
 
@@ -99,7 +107,7 @@ void drawSeventhRow_1(string word7)
 	cout << endl;
 	cout << "                      ---------------------" << endl;
 	cout << "  7:                  | "; cout << word7[0]; cout << " | "; cout << word7[1]; cout << " | ";  cout << word7[2]; cout << " | "; cout << word7[3]; cout << " | "; cout << word7[4]; cout << " | " << endl;
-	cout << "                      ---------------------";
+	cout << "                      ---------------------" << endl;
 }
 
 
@@ -107,9 +115,9 @@ void drawEightRow_1(string word8)
 {
 
 	cout << endl;
-	cout << "                      -------------------------------------------------" << endl;
-	cout << "  8:                  | "; cout << word8[0]; cout << " | "; cout << word8[1]; cout << " | "; cout << word8[2]; cout << " | "; cout << word8[3]; cout << " | "; cout << word8[4]; cout << " | "; cout << word8[5]; cout << " | "; cout << word8[6]; cout << " | ";  cout << word8[7]; cout << " | ";  cout << word8[8]; cout << " | "; cout << word8[8]; cout << " | "; cout << word8[9]; cout << " | "; cout << word8[10]; cout << " | " << endl;
-	cout << "                      -------------------------------------------------";
+	cout << "                      ---------------------------------------------" << endl;
+	cout << "  8:                  | "; cout << word8[0]; cout << " | "; cout << word8[1]; cout << " | "; cout << word8[2]; cout << " | "; cout << word8[3]; cout << " | "; cout << word8[4]; cout << " | "; cout << word8[5]; cout << " | "; cout << word8[6]; cout << " | ";  cout << word8[7]; cout << " | ";  cout << word8[8]; cout << " | ";  cout << word8[9]; cout << " | "; cout << word8[10]; cout << " | " << endl;
+	cout << "                      ---------------------------------------------" << endl;
 }
 
 
@@ -119,7 +127,7 @@ void drawNinthRow_1(string word9)
 	cout << endl;
 	cout << "                      -----------------------------------------" << endl;
 	cout << "  9:                  | "; cout << word9[0]; cout << " | "; cout << word9[1]; cout << " | "; cout << word9[2]; cout << " | "; cout << word9[3]; cout << " | "; cout << word9[4]; cout << " | "; cout << word9[5]; cout << " | "; cout << word9[6]; cout << " | ";  cout << word9[7]; cout << " | ";  cout << word9[8]; cout << " | "; cout << word9[9]; cout << " | " << endl;
-	cout << "                      -----------------------------------------";
+	cout << "                      -----------------------------------------" << endl;
 }
 
 
@@ -129,7 +137,7 @@ void drawTenthRow_1(string word10)
 	cout << endl;
 	cout << "                      -----------------------------" << endl;
 	cout << "  10:                 | "; cout << word10[0]; cout << " | "; cout << word10[1]; cout << " | "; cout << word10[2]; cout << " | "; cout << word10[3]; cout << " | "; cout << word10[4]; cout << " | "; cout << word10[5]; cout << " | "; cout << word10[6]; cout << " | " << endl;
-	cout << "                      -----------------------------";
+	cout << "                      -----------------------------" << endl;
 }
 
 
@@ -139,7 +147,7 @@ void drawEleventhRow_1(string word11)
 	cout << endl;
 	cout << "                      --------------------------------------" << endl;
 	cout << "  11:                 | "; cout << word11[0]; cout << " | "; cout << word11[1]; cout << " | "; cout << word11[2]; cout << " | "; cout << word11[3]; cout << " | "; cout << word11[4]; cout << " | "; cout << word11[5]; cout << " | "; cout << word11[6]; cout << " | ";  cout << word11[7]; cout << " | ";  cout << word11[8]; cout << " | " << endl;
-	cout << "                      --------------------------------------";
+	cout << "                      --------------------------------------" << endl;
 }
 
 //Function to check if what you typed is the correct word (for the rest of the words)
@@ -432,7 +440,7 @@ void changeWords1() //goes from one word to another
 	}
 }
 
- //game 2
+//game 2
 //Draw rows
 void drawFirstRow_2(string word1)
 {
@@ -440,7 +448,7 @@ void drawFirstRow_2(string word1)
 	cout << endl;
 	cout << "                      -------------------------" << endl;
 	cout << "  1:                  | "; cout << word1[0]; cout << " | "; cout << word1[1]; cout << " | "; cout << word1[2]; cout << " | "; cout << word1[3]; cout << " | "; cout << word1[4]; cout << " | "; cout << word1[5]; cout << " | " << endl;
-	cout << "                      -------------------------";
+	cout << "                      -------------------------" << endl;
 }
 
 
@@ -459,7 +467,7 @@ void drawThirdRow_2(string word3)
 	cout << endl;
 	cout << "                      ---------------------" << endl;
 	cout << "  3:                  | "; cout << word3[0]; cout << " | "; cout << word3[1]; cout << " | "; cout << word3[2]; cout << " | "; cout << word3[3]; cout << " | "; cout << word3[4]; cout << " | " << endl;
-	cout << "                      ---------------------";
+	cout << "                      ---------------------" << endl;
 }
 
 
@@ -469,7 +477,7 @@ void drawForthRow_2(string word4)
 	cout << endl;
 	cout << "                      -----------------" << endl;
 	cout << "  4:                  | "; cout << word4[0]; cout << " | "; cout << word4[1]; cout << " | "; cout << word4[2]; cout << " | "; cout << word4[3]; cout << " | " << endl;
-	cout << "                      -----------------";
+	cout << "                      -----------------" << endl;
 }
 
 
@@ -479,7 +487,7 @@ void drawFifthRow_2(string word5)
 	cout << endl;
 	cout << "                      -----------------------------------------" << endl;
 	cout << "  5:                  | "; cout << word5[0]; cout << " | "; cout << word5[1]; cout << " | "; cout << word5[2]; cout << " | "; cout << word5[3]; cout << " | "; cout << word5[4]; cout << " | "; cout << word5[5]; cout << " | "; cout << word5[6]; cout << " | ";  cout << word5[7]; cout << " | ";  cout << word5[8]; cout << " | ";  cout << word5[9]; cout << " | " << endl;
-	cout << "                      -----------------------------------------";
+	cout << "                      -----------------------------------------" << endl;
 }
 
 
@@ -489,7 +497,7 @@ void drawSixthRow_2(string word6)
 	cout << endl;
 	cout << "                      -------------------------" << endl;
 	cout << "  6:                  | "; cout << word6[0]; cout << " | "; cout << word6[1]; cout << " | "; cout << word6[2]; cout << " | "; cout << word6[3]; cout << " | "; cout << word6[4]; cout << " | "; cout << word6[5]; cout << " | " << endl;
-	cout << "                      -------------------------";
+	cout << "                      -------------------------" << endl;
 }
 
 
@@ -499,7 +507,7 @@ void drawSeventhRow_2(string word7)
 	cout << endl;
 	cout << "                      -----------------------------------------------------" << endl;
 	cout << "  7:                  | "; cout << word7[0]; cout << " | "; cout << word7[1]; cout << " | "; cout << word7[2]; cout << " | "; cout << word7[3]; cout << " | "; cout << word7[4]; cout << " | "; cout << word7[5]; cout << " | "; cout << word7[6]; cout << " | ";  cout << word7[7]; cout << " | ";  cout << word7[8]; cout << " | "; cout << word7[8]; cout << " | "; cout << word7[9]; cout << " | "; cout << word7[10]; cout << " | "; cout << word7[11]; cout << " | " << endl;
-	cout << "                      -----------------------------------------------------";
+	cout << "                      -----------------------------------------------------" << endl;
 }
 
 
@@ -509,7 +517,7 @@ void drawEightRow_2(string word8)
 	cout << endl;
 	cout << "                      -----------------------------" << endl;
 	cout << "  8:                  | "; cout << word8[0]; cout << " | "; cout << word8[1]; cout << " | "; cout << word8[2]; cout << " | "; cout << word8[3]; cout << " | "; cout << word8[4]; cout << " | "; cout << word8[5]; cout << " | "; cout << word8[6]; cout << " | " << endl;
-	cout << "                      -----------------------------";
+	cout << "                      -----------------------------" << endl;
 }
 
 
@@ -519,7 +527,7 @@ void drawNinthRow_2(string word9)
 	cout << endl;
 	cout << "                      -------------------------------------" << endl;
 	cout << "  9:                  | "; cout << word9[0]; cout << " | "; cout << word9[1]; cout << " | "; cout << word9[2]; cout << " | "; cout << word9[3]; cout << " | "; cout << word9[4]; cout << " | "; cout << word9[5]; cout << " | "; cout << word9[6]; cout << " | ";  cout << word9[7]; cout << " | ";  cout << word9[8]; cout << " | " << endl;
-	cout << "                      -------------------------------------";
+	cout << "                      -------------------------------------" << endl;
 }
 
 
@@ -530,7 +538,7 @@ void changeQuestions2()
 	case 0:
 		//Shows the question and expects you to write the correct answer
 		system("CLS");
-		cout << "                                          Level 2: Capital Citys" << endl << endl<<endl;
+		cout << "                                          Level 2: Capital Citys" << endl << endl << endl;
 		cout << "Question 1: The capital and the largest city of England is?" << endl;
 		cout << "Type word: ";
 		break;
@@ -710,7 +718,7 @@ void changeWords2() //goes from one word to another
 	if (correctWordsNumber == 8)
 	{
 		check(word, answer9_2);
-		correctWordsNumber = 9;
+		correctWordsNumber = 0;
 
 		if (counter >= answer9_2.size())
 		{
@@ -719,8 +727,272 @@ void changeWords2() //goes from one word to another
 			counter = 0;
 		}
 	}
+	cout << endl;
 
 }
+
+
+
+
+//game 3
+void drawFirstRow_3(string word1)
+{
+
+	cout << endl;
+	cout << "                      -------------------------------------" << endl;
+	cout << "  1:                  | "; cout << word1[0]; cout << " | "; cout << word1[1]; cout << " | "; cout << word1[2]; cout << " | "; cout << word1[3]; cout << " | "; cout << word1[4]; cout << " | "; cout << word1[5]; cout << " | "; cout << word1[6]; cout << " | "; cout << word1[7]; cout << " | "; cout << word1[8]; cout << " | " << endl;
+	cout << "                      -------------------------------------" << endl;
+}
+
+
+void drawSecondRow_3(string word2)
+{
+
+	cout << endl;
+	cout << "                      -------------------------" << endl;
+	cout << "  2:                  | "; cout << word2[0]; cout << " | "; cout << word2[1]; cout << " | "; cout << word2[2]; cout << " | "; cout << word2[3]; cout << " | "; cout << word2[4]; cout << " | "; cout << word2[5]; cout << " | " << endl;
+	cout << "                      -------------------------" << endl;
+}
+
+void drawThirdRow_3(string word3)
+{
+
+	cout << endl;
+	cout << "                      ---------------------" << endl;
+	cout << "  3:                  | "; cout << word3[0]; cout << " | "; cout << word3[1]; cout << " | "; cout << word3[2]; cout << " | "; cout << word3[3]; cout << " | "; cout << word3[4]; cout << " | " << endl;
+	cout << "                      ---------------------" << endl;
+}
+
+
+void drawForthRow_3(string word4)
+{
+
+	cout << endl;
+	cout << "                      -------------------------" << endl;
+	cout << "  4:                  | "; cout << word4[0]; cout << " | "; cout << word4[1]; cout << " | "; cout << word4[2]; cout << " | "; cout << word4[3]; cout << " | "; cout << word4[4]; cout << " | "; cout << word4[5]; cout << " | " << endl;
+	cout << "                      -------------------------" << endl;
+}
+
+
+void drawFifthRow_3(string word5)
+{
+
+	cout << endl;
+	cout << "                      ---------------------" << endl;
+	cout << "  5:                  | "; cout << word5[0]; cout << " | "; cout << word5[1]; cout << " | "; cout << word5[2]; cout << " | "; cout << word5[3]; cout << " | "; cout << word5[4]; cout << " | " << endl;
+	cout << "                      ---------------------" << endl;
+}
+
+
+void drawSixthRow_3(string word6)
+{
+
+	cout << endl;
+	cout << "                      -----------------" << endl;
+	cout << "  6:                  | "; cout << word6[0]; cout << " | "; cout << word6[1]; cout << " | "; cout << word6[2]; cout << " | "; cout << word6[3] << " | " << endl;
+	cout << "                      -----------------" << endl;
+}
+
+
+void drawSeventhRow_3(string word7)
+{
+
+	cout << endl;
+	cout << "                      -----------------------------" << endl;
+	cout << "  7:                  | "; cout << word7[0]; cout << " | "; cout << word7[1]; cout << " | "; cout << word7[2]; cout << " | "; cout << word7[3]; cout << " | "; cout << word7[4]; cout << " | "; cout << word7[5]; cout << " | "; cout << word7[6]; cout << " | " << endl;
+	cout << "                      -----------------------------" << endl;
+}
+
+
+void drawEightRow_3(string word8)
+{
+
+	cout << endl;
+	cout << "                      -------------------------------------" << endl;
+	cout << "  8:                  | "; cout << word8[0]; cout << " | "; cout << word8[1]; cout << " | "; cout << word8[2]; cout << " | "; cout << word8[3]; cout << " | "; cout << word8[4]; cout << " | "; cout << word8[5]; cout << " | "; cout << word8[6]; cout << " | "; cout << word8[7]; cout << " | "; cout << word8[8]; cout << " | " << endl;
+	cout << "                      -------------------------------------" << endl;
+}
+
+
+
+void changeQuestions3()
+{
+	switch (correctWordsNumber)
+	{
+	case 0:
+		//Shows the question and expects you to write the correct answer
+		cout << "Question 1: What is the most significant Italian dish?" << endl;
+		cout << "Type word: ";
+		break;
+
+	case 1:
+		cout << "Question 2: What is the food that has yellow skin and monkeys enjoy eating?" << endl;
+		cout << "Type word: ";
+		break;
+
+	case 2:
+		cout << "Question 3: what is the food that is round usually covered in tomato sauce and cheese?" << endl;
+		cout << "Type word: ";
+		break;
+
+	case 3:
+		cout << "Question 4: What is the food that grows on trees, people mostly made juice from it and it is name after a color?" << endl;
+		cout << "Type word: ";
+		break;
+
+	case 4:
+		cout << "Question 5: What it is the type of food that can be found in a bakery and you make toast from it?" << endl;
+		cout << "Type word: ";
+		break;
+	case 5:
+		cout << "Question 6: What is the type of food that it is being served on birthday parties?" << endl;
+		cout << "Type word: ";
+		break;
+
+	case 6:
+		cout << "Question 7: What is the type of vegetable that is green, and it is mostly eaten in salads?" << endl;
+		cout << "Type word: ";
+		break;
+
+	case 7:
+		cout << "Question 8: What is the food that its sweet, children love it and back then it was used as money?" << endl;
+		cout << "Type word: ";
+		break;
+
+
+	}
+}
+
+
+void changeWords3() //goes from one word to another
+{
+	changeQuestions3();
+	if (correctWordsNumber == 0) //checks how many correct words you have found
+	{
+		check(word, answer1_3);
+		correctWordsNumber = 1; //shows how many words you've found
+
+		if (counter >= answer1_3.size()) //checks if you've typed the whole word correctly
+		{
+			drawFirstRow_3(answer1_3); //shows the correct row
+			word = word.empty();
+			counter = 0;
+		}
+	}
+	cout << endl;
+
+
+	changeQuestions3();
+	if (correctWordsNumber == 1)
+	{
+		check(word, answer2_3);
+		correctWordsNumber = 2;
+
+		if (counter >= answer2_3.size())
+		{
+			drawSecondRow_3(answer2_3);
+			word = word.empty();
+			counter = 0;
+		}
+	}
+	cout << endl;
+
+
+	changeQuestions3();
+	if (correctWordsNumber == 2)
+	{
+		check(word, answer3_3);
+		correctWordsNumber = 3;
+
+		if (counter >= answer3_3.size())
+		{
+			drawThirdRow_3(answer3_3);
+			word = word.empty();
+			counter = 0;
+		}
+	}
+	cout << endl;
+
+
+	changeQuestions3();
+	if (correctWordsNumber == 3)
+	{
+		check(word, answer4_3);
+		correctWordsNumber = 4;
+
+		if (counter >= answer4_3.size())
+		{
+			drawForthRow_3(answer4_3);
+			word = word.empty();
+			counter = 0;
+		}
+	}
+	cout << endl;
+
+
+	changeQuestions3();
+	if (correctWordsNumber == 4)
+	{
+		check(word, answer5_3);
+		correctWordsNumber = 5;
+
+		if (counter >= answer5_3.size())
+		{
+			drawFifthRow_3(answer5_3);
+			word = word.empty();
+			counter = 0;
+		}
+	}
+	cout << endl;
+
+
+	changeQuestions3();
+	if (correctWordsNumber == 5)
+	{
+		check(word, answer6_3);
+		correctWordsNumber = 6;
+
+		if (counter >= answer6_3.size())
+		{
+			drawSixthRow_3(answer6_3);
+			counter = 0;
+		}
+	}
+	cout << endl;
+
+
+	changeQuestions3();
+	if (correctWordsNumber == 6)
+	{
+		check(word, answer7_3);
+		correctWordsNumber = 7;
+
+		if (counter >= answer7_3.size())
+		{
+			drawSeventhRow_3(answer7_3);
+			word = word.empty();
+			counter = 0;
+		}
+	}
+	cout << endl;
+
+
+	changeQuestions3();
+	if (correctWordsNumber == 7)
+	{
+		check(word, answer8_3);
+		correctWordsNumber = 8;
+
+		if (counter >= answer8_3.size())
+		{
+			drawEightRow_3(answer8_3);
+			word = word.empty();
+			counter = 0;
+		}
+	}
+	cout << endl;
+}
+
 
 void game()
 {
@@ -739,8 +1011,26 @@ void game()
 	{
 		changeWords2(); //main function
 
-		cout << endl << "                 Congratulations!!! You Won ";
-		system("PAUSE");
+		cout << endl << "                                          Congratulations!!! You Won " << endl << endl;
+		cout << endl << "                                          Do you want to start a new game: ";
+		newGame = newGame.empty();
+		getline(cin, newGame);
+
+		if (newGame == "Yes" || newGame == "yes")
+		{
+			changeWords3(); //main function
+
+			cout << endl << "                 Congratulations!!! You Won " << endl << endl;
+			system("PAUSE");
+		}
+
+		else if (newGame == "No" || newGame == "no")
+		{
+			system("PAUSE");
+		}
+		else if (newGame != "No" && newGame != "Yes" && newGame == "no" && newGame == "yes") {
+			cout << " Incorrect input!";
+		}
 
 	}
 
@@ -751,7 +1041,6 @@ void game()
 	else if (newGame != "No" && newGame != "Yes" && newGame == "no" && newGame == "yes") {
 		cout << " Incorrect input!";
 	}
-	system("PAUSE");
 }
 
 void mainMenu() {
@@ -827,11 +1116,17 @@ void startGame()
 	cout << "               \\   \\   /  /  \\  \\   /   /      |   |       |   |   |   | \\   \\      |  |    |   |  " << endl;
 	cout << "                \\   \\_/  /    \\  \\_/   /       |   |_     _|   |   |   |  \\   \\     |  |___/   /   " << endl;
 	cout << "                 \\      /      \\      /        |_   |_____|   _|   |   |   \\   \\    |         /      " << endl;
-	cout << "                  \\____/        \\____/           |___________|     |___|    \\___\\   |________/       " << endl<<endl;
+	cout << "                  \\____/        \\____/           |___________|     |___|    \\___\\   |________/       " << endl << endl;
 }
+
+
+
+
 int main() {
 	startGame();
 	system("PAUSE");
 	system("CLS");
 	mainMenu();
 }
+
+
