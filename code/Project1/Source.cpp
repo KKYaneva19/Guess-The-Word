@@ -14,7 +14,7 @@ string answer7_1 = "Maths";
 string answer8_1 = "Programming";
 string asnwer9_1 = "Literature";
 string answer10_1 = "History";
-string answer11 = "Geography";
+string answer11_1 = "Geography";
 
 string answer1_2 = "London";
 string answer2_2 = "Tokyo";
@@ -26,10 +26,13 @@ string answer7_2 = "Buenos Aires";
 string answer8_2 = "Bangkok";
 string answer9_2 = "Cape Town";
 
+
+
 int counter = 0;
 int correctWordsNumber = 0;
 
-
+//game 1
+//Draw rows
 void drawFirstRow_1(string word1)
 {
 
@@ -225,7 +228,7 @@ void changeQuestions1()
 		break;
 
 	case 7:
-		cout << "Question 8: The subject, where we are taught how to solve problems using programming languages is?" << endl;
+		cout << "Question 8: The subject, where we are taught how to solve problems using programming language is?" << endl;
 		cout << "Type word: ";
 		break;
 	case 8:
@@ -245,7 +248,7 @@ void changeQuestions1()
 
 void changeWords1() //goes from one word to another
 {
-	cout << "                                          Level 1: School Subjects" << endl << endl;
+	cout << "                                          Level 1: School Subjects" << endl << endl << endl;
 	changeQuestions1();
 	if (correctWordsNumber == 0) //checks how many correct words you have found
 	{
@@ -407,19 +410,19 @@ void changeWords1() //goes from one word to another
 	changeQuestions1();
 	if (correctWordsNumber == 10)
 	{
-		check(word, answer11);
+		check(word, answer11_1);
 		correctWordsNumber = 0;
 
-		if (counter >= answer11.size())
+		if (counter >= answer11_1.size())
 		{
-			drawEleventhRow_1(answer11);
+			drawEleventhRow_1(answer11_1);
 			word = word.empty();
 			counter = 0;
 		}
 	}
 }
 
-///game 2
+ //game 2
 //Draw rows
 void drawFirstRow_2(string word1)
 {
@@ -517,7 +520,7 @@ void changeQuestions2()
 	case 0:
 		//Shows the question and expects you to write the correct answer
 		system("CLS");
-		cout << "                                          Level 2: Capital Citys" << endl << endl;
+		cout << "                                          Level 2: Capital Citys" << endl << endl<<endl;
 		cout << "Question 1: The capital and the largest city of England is?" << endl;
 		cout << "Type word: ";
 		break;
@@ -741,14 +744,19 @@ void game()
 	system("PAUSE");
 }
 
-void menu() {
+void mainMenu() {
 	int choice;
-	cout << "                                    *   *   *   * Guess The Word *   *   *   *  * " << endl << endl;
-	cout << "                                    *           1. Start Game                   *" << endl << endl;
-	cout << "                                    *           2. Rules                        *" << endl << endl;
-	cout << "                                    *           3. Quit                         *" << endl << endl;
-	cout << "                                    *   *   *   *   *   *   *   *   *   *   *   *" << endl << endl;
-	cout << "                                             Please select your choice! ";
+	cout << "               _      _        __        ___    _                 _      _        ____    _          _     _             ";
+	cout << "             //\\    /\\\\      //\\\\       //    //\\     /         //\\    /\\\\      //      //\\     /  | |   | |   " << endl;
+	cout << "             //  \\  /  \\\\    //__\\\\     //    //  \\   /         //  \\  /  \\\\    ////    //  \\   /   | |   | |    " << endl;
+	cout << "            //    \\/    \\\\  //    \\\\  _//_   //    \\_/         //    \\/    \\\\  //___   //    \\_/    \\ \\___/ /   " << endl;
+	cout << "          \\__________________________________________________________________________________________________/      " << endl;
+	cout << "                                                                                                                      " << endl;
+	cout << "                                                 1. Start Game                                    " << endl << endl;
+	cout << "                                                 2. Rules                                         " << endl << endl;
+	cout << "                                                 3. Quit                                          " << endl << endl;
+	cout << "                                                                                                  " << endl;
+	cout << "                                           Please select your choice! ";
 
 	cin >> choice;
 	if (choice == 1) {
@@ -756,19 +764,21 @@ void menu() {
 	}
 	else if (choice == 2) {
 		system("CLS");
-		cout << "                               *   *   *   *   *   *   *   *   *   *   *   *   * *" << endl << endl;
-		cout << "                               *                    RULES                        *" << endl << endl;
-		cout << "                               *     1.There can't be more than one answear.     *" << endl << endl;
-		cout << "                               *     2.You must fill all the given space.        *" << endl << endl;
-		cout << "                               *     3.You must use only English.                *" << endl << endl;
-		cout << "                               *     4.There can't be any numbers or symbols.    *" << endl << endl;
-		cout << "                               *     5.Each first letter must be in capital.     *" << endl << endl;
-		cout << "                               *                                                 *" << endl << endl;
-		cout << "                               *   *   *   *   *   *   *   *   *   *   *   *   * *" << endl;
+		cout << "                                        *****   *   *  *    ****   ****    " << endl;
+		cout << "                                        *   *   *   *  *    *      *       " << endl;
+		cout << "                                        ****    *   *  *    ****   ****    " << endl;
+		cout << "                                        *   *   *   *  *    *         *    " << endl;
+		cout << "                                        *    *   ***   **** ****   ****    " << endl;
+		cout << "                                 ____________________________________________   " << endl << endl;
+		cout << "    1.You must use only English.                         " << endl << endl;
+		cout << "    2.You must fill all the given space.                 " << endl << endl;
+		cout << "    3.There can't be more than one answear.              " << endl << endl;
+		cout << "    4.Each first letter of the word must be in capital.  " << endl << endl;
+		cout << "    5.There can't be any numbers or symbols in the words." << endl << endl;
 
 		system("PAUSE");
 		system("CLS");
-		menu();
+		mainMenu();
 	}
 	else if (choice == 3) {
 		system("PAUSE");
@@ -779,8 +789,39 @@ void menu() {
 		system("PAUSE");
 	}
 }
-
+void startGame()
+{
+	cout << "                _________       ___       ___     ___________     ____________     ___________           " << endl;
+	cout << "               |  ____   |     |   |     |   |   |           |   |   _________|   |   ________|          " << endl;
+	cout << "              |  |    |__|     |   |     |   |   |   ________|   |  |             |  |                   " << endl;
+	cout << "              |  |             |   |     |   |   |  |________    |  |_________    |  |________           " << endl;
+	cout << "              |  |     ____    |   |     |   |   |           |   |_________   |   |________   |          " << endl;
+	cout << "              |  |    |_   |   |   |_   _|   |   |   ________|             |  |            |  |          " << endl;
+	cout << "              |  |      |  |    |_  |___|  _|    |  |_________    _________|  |    ________|  |          " << endl;
+	cout << "              |   |____|   |      |__   __|      |            |  |            |   |           |          " << endl;
+	cout << "               |__________|         |___|        |____________|  |____________|   |___________|          " << endl;
+	cout << "                                _______________     ____     ____     ___________                        " << endl;
+	cout << "                               |               |   |    |   |    |   |           |                       " << endl;
+	cout << "                               |____       ____|   |    |   |    |   |   ________|                       " << endl;
+	cout << "                                    |     |        |    |___|    |   |  |________                        " << endl;
+	cout << "                                    |     |        |             |   |           |                       " << endl;
+	cout << "                                    |     |        |     ___     |   |   ________|                       " << endl;
+	cout << "                                    |     |        |    |   |    |   |  |_________                       " << endl;
+	cout << "                                    |     |        |    |   |    |   |            |                      " << endl;
+	cout << "                                    |_____|        |____|   |____|   |____________|                      " << endl;
+	cout << "           ____                          ____     ___________       __________       ________            " << endl;
+	cout << "           \\   \\                        /   /   _|   _____   |_    |    ___   |     |   __   \\        " << endl;
+	cout << "            \\   \\         ____         /   /   |    |     |    |   |   |   |   |    |  |  \\   \\      " << endl;
+	cout << "             \\   \\       /    \\       /   /    |   |       |   |   |   |___|   |    |  |   \\   \\    " << endl;
+	cout << "              \\   \\     /  __  \\     /   /     |   |       |   |   |    _    _/     |  |    |   |     " << endl;
+	cout << "               \\   \\   /  /  \\  \\   /   /      |   |       |   |   |   | \\   \\      |  |    |   |  " << endl;
+	cout << "                \\   \\_/  /    \\  \\_/   /       |   |_     _|   |   |   |  \\   \\     |  |___/   /   " << endl;
+	cout << "                 \\      /      \\      /        |_   |_____|   _|   |   |   \\   \\    |         /      " << endl;
+	cout << "                  \\____/        \\____/           |___________|     |___|    \\___\\   |________/       " << endl<<endl;
+}
 int main() {
-
-	menu();
+	startGame();
+	system("PAUSE");
+	system("CLS");
+	mainMenu();
 }
