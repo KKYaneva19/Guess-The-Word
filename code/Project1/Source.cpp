@@ -148,6 +148,16 @@ void check(string word, string answer)
 	getline(cin, word);
 	for (size_t j = 0; j < answer.size(); j++)
 	{
+		if (word.size() > answer.size())
+		{
+			cout << endl;
+			cout << "Too many letters!" << endl;
+			cout << "Try again : ";
+			j = 0;
+			word = word.empty();
+			getline(cin, word);
+		}
+
 		if (word == "")
 		{
 			getline(cin, word);
