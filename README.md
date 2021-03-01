@@ -26,24 +26,31 @@ Guess-the-word®
 # Function list
 <hr>
 
- changeQuestions1() - Change the questions on first level
-changeQuestions2() Change the questions on second level
+ changeQuestions1() - Changes the questions for first level
 
-changeWords1() - Goes from one word to other on first level
+changeQuestions2() - Changes the questions for second level
 
-changeWords2() - Goes from one word to other on second level
+changeQuestions3() - Changes the questions for third level
 
-void check() - Check if you type the correct word
+changeWords1() - Goes from one word to another on the first level
 
-drawFisrtRow_1, drawSecondRow_1 - Questions for first level
+changeWords2() - Goes from one word to another on the second level
 
-drawFirstRow_2, drawSecondRow_2 - Questions for second level
+changeWords3() - Goes from one word to another on the third level
 
-drawFirstRow_3, drawSecondRow_3 - Questions for third level
+check() - This function checks if you typed the correct word
 
-menu() - Shows the game menu
+drawFisrtRow_1, drawSecondRow_1 - It shows you the correct word and each letter is drawn in separate box for first level
 
-game() - Says that you win
+drawFirstRow_2, drawSecondRow_2 - It shows you the correct word and each letter is drawn in separate box for second level
+
+drawFirstRow_3, drawSecondRow_3 - It shows you the correct word and each letter is drawn in separate box for third level
+
+mainMenu() - Shows you the main menu where you can choose to either Start a game, see the rules or quit the game
+
+game() - Changes the levels
+
+startMenu() - Shows you the start menu
 
 # Future ideas
 <hr>
@@ -51,6 +58,16 @@ game() - Says that you win
 •To create new levels for example 4 level will be for movies and 5 level for celebrities. 
 
 •We also want to add color. For example when you type the correct word it will become green and to make the menu purple. 
+
+
+
+# Here is how to download our repo:
+https://github.com/KKYaneva19/Guess-The-Word.git
+
+# Have fun playing!
+
+
+
 
 
 
