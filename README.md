@@ -62,16 +62,9 @@ startMenu() - Shows you the start menu
 
 
 # Here is how to download our repo:
-https://github.com/KKYaneva19/Guess-The-Word.git
+git clone https://github.com/KKYaneva19/Guess-The-Word.git
 
 # Have fun playing!
-
-
-
-
-
-
-
 
 
 
